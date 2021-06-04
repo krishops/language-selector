@@ -12,7 +12,17 @@ function totalValue(number1, number2, number3, number4) {
 
 
 // User Interface Logic
+$(document).ready(function()  {
+  $("form#language-selector").submit(function(event){
+    event.preventDefault();
+    const name = $("input#name").val();
+    const color = parseInt($("select#color").val());
+    console.log(name);
+    console.log(color);
 
+    
+  });
+});
 
 
 
