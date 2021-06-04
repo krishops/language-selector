@@ -36,13 +36,42 @@ $(document).ready(function()  {
       if (total <=25) {
         $("#language").text("Ruby");
         $("#hidden").show();
-      } else if (total >25 && <=50) {
-        $("language").text("Java");
+      } else if (total >26 && total <=50) {
+        $("#language").text("Java");
         $("#hidden").show();
-      } else if (total >50 && <=75) {
-        $("language").text("C#");
+      } else if (total >51 && total <=75) {
+        $("#language").text("C#");
         $("#hidden").show();
       }
+
+    if ((quest === "desktop"));
+      if (total <=25) {
+        $("#language").text("C#");
+        $("#hidden").show();
+      } else if (total >26 && total <=50) {
+        $("#language").text("Ruby");
+        $("#hidden").show();
+      } else if (total >51 && total <=75) {
+        $("#language").text("Java");
+        $("#hidden").show();
+      }
+    
+      if ((quest === "mobile"));
+      if (total <=25) {
+        $("#language").text("Java");
+        $("#hidden").show();
+      } else if (total >26 && total <=50) {
+        $("#language").text("C#");
+        $("#hidden").show();
+      } else if (total >51 && total <=75) {
+        $("#language").text("Ruby");
+        $("#hidden").show();
+      }
+
+    if ((quest === "holy-grail"));
+        $("#hidden-fail").show()
+       
+      
     
     
     
