@@ -6,8 +6,8 @@
 
 //Business logic
 
-function totalValue(number1, number2, number3, number4) {
-  return number1 + number2 + number3 + number4
+function userTotal(color, assyria, swallow, knights) {
+  return color + assyria + swallow + knights
 }
 
 
@@ -15,10 +15,21 @@ function totalValue(number1, number2, number3, number4) {
 $(document).ready(function()  {
   $("form#language-selector").submit(function(event){
     event.preventDefault();
-    const name = $("input#name").val();
-    const color = parseInt($("select#color").val());
+    const name = $("#name").val();
+    const quest = $("input:radio[name=quest]:checked").val();
+    const color = parseInt($("#color").val());
+    const assyria = parseInt($("#assyria").val());
+    const swallow = parseInt($("#swallow").val());
+    const knights = parseInt($("#knights").val());
+    const total = userTotal(color, assyria, swallow, knights);
     console.log(name);
+    console.log(quest)
     console.log(color);
+    console.log(assyria);
+    console.log(swallow);
+    console.log(knights);
+    console.log(total);
+    
 
     
   });
