@@ -17,8 +17,11 @@ $(document).ready(function()  {
     const total = userTotal(color, assyria, swallow, knights);
     $("#username").text(name);
     $("#username-fail").text(name);
-    $(".btn-light").click(function(){
+
+    $(".btn-danger").click(function(){
       $("#language-selector").trigger("reset");
+      $("#hidden").hide();
+      $("#hidden-fail").hide()
     });
   
 
