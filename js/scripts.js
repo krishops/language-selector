@@ -1,8 +1,7 @@
 // const beverage = $("#beverage").val();
 // const flavor = $("input:radio[name=flavor]:checked").val();
-// HTML: 1-5
-// Java: 6-10
-// C#: 11-15
+
+// Holy Grail: Critical Error
 
 //Business logic
 
@@ -22,6 +21,31 @@ $(document).ready(function()  {
     const swallow = parseInt($("#swallow").val());
     const knights = parseInt($("#knights").val());
     const total = userTotal(color, assyria, swallow, knights);
+    $("#username").text(name);
+    
+    
+    // if else statements here
+    // pick what quest directs to certain results
+    // if radio button for holy grail selected - return error, don't get to cross bridge
+
+    
+    // Webdesign 0-25: Ruby 26-50: Java 51-75: C#
+// Desktop 0-25: Java 26-50: C# 51-75: Ruby
+// Mobile 0-25: C# 26-50: Ruby 51-75: Java
+    if ((quest === "web-design"));
+      if (total <=25) {
+        $("#language").text("Ruby");
+        $("#hidden").show();
+      // } else if (total >25 && <=50) {
+      //   $("language").text("Java");
+      //   $("#hidden").show();
+      // } else if (total >50 && <=75) {
+      //   $("language").text("C#");
+      //   $("#hidden").show();
+      }
+    
+    
+    
     console.log(name);
     console.log(quest)
     console.log(color);
@@ -35,8 +59,10 @@ $(document).ready(function()  {
   });
 });
 
+// If they pick Holy Grail it's an immediate fail that should be easy enough.
+// If They pi
 
 
 
-// if else statements here
-// pick what quest directs to certain results
+
+
