@@ -1,17 +1,25 @@
 body {
-  background-image: url('https://media-exp1.licdn.com/dms/image/C4E12AQFQUPKkoU3-8Q/article-cover_image-shrink_600_2000/0/1520162820929?e=1628121600&v=beta&t=CRRYgiTIIoVRyHXG0BNiPNPpSnYJAa0Idiv734M5oNU');
-  background-size: repeat;
-  padding-bottom: 100px;
+  color: rgb(241, 234, 234);
+  font-size: large; 
+  background-color: rgba(128, 128, 128, 0.835);
 }
 
 .container {
-  background-color: aquamarine;
+  background-image: url("https://media-exp1.licdn.com/dms/image/C4E12AQFQUPKkoU3-8Q/article-cover_image-shrink_600_2000/0/1520162820929?e=1628121600&v=beta&t=CRRYgiTIIoVRyHXG0BNiPNPpSnYJAa0Idiv734M5oNU");
+  background-image-opacity: .5;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
   padding-bottom: 300px;
 }
 
 .jumbotron {
-  width: 75%;
-  text-align: center;
+  color: black;
+  background-color: rgba(240, 233, 233, 0.438);
+}
+
+.aside {
+  font-size: small;
 }
 
 #hidden {
@@ -22,6 +30,19 @@ body {
   display: none;
 }
 
-.aside {
-  font-size: xx-small;
+.result {
+  color: black;
+  background-color: rgba(240, 233, 233, 0.774);
+  padding: 20px;
+  float: left
+}
+
+#hidden img {
+  width: 400px;
+  float: right;
+}
+
+#hidden-fail img {
+  width: 400px;
+  float: right;
 }

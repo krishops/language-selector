@@ -60,20 +60,6 @@ $(document).ready(function()  {
         $("#hidden-fail").show();
       }
     }
-      
-    
-    
-    
-    console.log(name);
-    console.log(quest)
-    console.log(color);
-    console.log(assyria);
-    console.log(swallow);
-    console.log(knights);
-    console.log(total);
-    
-
-    
   });
 });
 
