@@ -3,6 +3,8 @@ function userTotal(color, assyria, swallow, knights) {
 }
 
 
+
+
 $(document).ready(function()  {
   $("form#language-selector").submit(function(event){
     event.preventDefault();
@@ -15,6 +17,18 @@ $(document).ready(function()  {
     const total = userTotal(color, assyria, swallow, knights);
     $("#username").text(name);
     $("#username-fail").text(name);
+    $(".btn-light").click(function(){
+      $("#language-selector").trigger("reset");
+    });
+  
+
+    console.log(name);
+    console.log(quest)
+    console.log(color);
+    console.log(assyria);
+    console.log(swallow);
+    console.log(knights);
+    console.log(total);
 
     if ((quest === "web-design")) {
       if (total <=25) {

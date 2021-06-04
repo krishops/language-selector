@@ -6,7 +6,6 @@ body {
 
 .container {
   background-image: url("https://media-exp1.licdn.com/dms/image/C4E12AQFQUPKkoU3-8Q/article-cover_image-shrink_600_2000/0/1520162820929?e=1628121600&v=beta&t=CRRYgiTIIoVRyHXG0BNiPNPpSnYJAa0Idiv734M5oNU");
-  background-image-opacity: .5;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100%;
@@ -26,8 +25,18 @@ body {
   display: none;
 }
 
+#hidden img {
+  width: 400px;
+  float: right;
+}
+
 #hidden-fail {
   display: none;
+}
+
+#hidden-fail img {
+  width: 400px;
+  float: right;
 }
 
 .result {
@@ -35,14 +44,4 @@ body {
   background-color: rgba(240, 233, 233, 0.774);
   padding: 20px;
   float: left
-}
-
-#hidden img {
-  width: 400px;
-  float: right;
-}
-
-#hidden-fail img {
-  width: 400px;
-  float: right;
 }
