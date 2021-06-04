@@ -22,6 +22,7 @@ $(document).ready(function()  {
     const knights = parseInt($("#knights").val());
     const total = userTotal(color, assyria, swallow, knights);
     $("#username").text(name);
+    $("#username-fail").text(name);
     
     
     // if else statements here
@@ -32,7 +33,7 @@ $(document).ready(function()  {
     // Webdesign 0-25: Ruby 26-50: Java 51-75: C#
 // Desktop 0-25: Java 26-50: C# 51-75: Ruby
 // Mobile 0-25: C# 26-50: Ruby 51-75: Java
-    if ((quest === "web-design"));
+    if ((quest === "web-design")) {
       if (total <=25) {
         $("#language").text("Ruby");
         $("#hidden").show();
@@ -43,8 +44,9 @@ $(document).ready(function()  {
         $("#language").text("C#");
         $("#hidden").show();
       }
+    }
 
-    if ((quest === "desktop"));
+    if ((quest === "desktop")) {
       if (total <=25) {
         $("#language").text("C#");
         $("#hidden").show();
@@ -55,8 +57,9 @@ $(document).ready(function()  {
         $("#language").text("Java");
         $("#hidden").show();
       }
+    }
     
-      if ((quest === "mobile"));
+    if ((quest === "mobile")) {
       if (total <=25) {
         $("#language").text("Java");
         $("#hidden").show();
@@ -67,10 +70,13 @@ $(document).ready(function()  {
         $("#language").text("Ruby");
         $("#hidden").show();
       }
+    }
 
-    if ((quest === "holy-grail"));
-        $("#hidden-fail").show()
-       
+    if ((quest === "holy-grail")) {
+      if (total >=0 && total <=75)  {
+        $("#hidden-fail").show();
+      }
+    }
       
     
     
