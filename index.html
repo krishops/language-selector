@@ -15,28 +15,51 @@
 <body>
   <div class="container">
     <div class="jumbotron" id="heading">
-      <h1>What programming language should you learn?</h1>
+      <h1>Welcome to the Bridge of Death</h1>
+      <h4>STOP! Who would cross the Bridge of Death must answer me these questions three (6, sir)</h4>
     </div>
 
     <form id="formOne">
       <div class="form-group">
-        <label class="question-title" for="name">What is your name?</label>
+        <label class="question" for="name">What is your name?</label>
         <input type="text" id="name" class="form-control">
       </div>
-      <div class="form-group">
-        <label for="quest" class="question-title">What is your quest? </label>
-        <select class="form-control" id="quest">
-          <option value="1">Web Design</option>
-          <option value="2">Game Development</option>
-          <option value="3">Destktop Apps</option>
-          <option value="4">Mobile Apps</option>
-          <option value="5">To seek the Holy Grail</option>
-        </select>
+      <div class="radio">
+        <label for="quest" class="question">What is your quest?</label>
+        <p></p>
+        <label>
+          <input type="radio" name="quest" value="web-design" checked>
+          Web design
+        </label>
       </div>
-
+      <div class="radio">
+        <label>
+          <input type="radio" name="quest" value="game-dev">
+          Game Development
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="quest" value="desktop">
+          Desktop Apps
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="quest" value="mobile">
+          Mobile Apps
+        </label>
+      </div>
+      <div class="radio">
+        <label>
+          <input type="radio" name="quest" value="holy-grail">
+          To Seek the Holy Grail
+        </label><p></p>
+      </div>
       <div class="form-group">
-        <label for="color" class="question-title">What is your favorite color?</label>
+        <label for="color" class="question">What is your favorite color?</label>
         <select class="form-control" id="color">
+          <option value="0"> </option>
           <option value="1">Blue</option>
           <option value="2">Red</option>
           <option value="3">Green</option>
@@ -45,8 +68,9 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="assyria" class="question-title">What is the capitol of assyria?</label>
+        <label for="assyria" class="question">What is the capitol of assyria?</label>
         <select class="form-control" id="assyria">
+          <option value="0"> </option>
           <option value="1">Ashur</option>
           <option value="2">Calah</option>
           <option value="3">Dur Sharrukin</option>
@@ -55,32 +79,27 @@
           <!-- Ashur, Calah, Dur Sharrukin, Nineveh What I don't know that Aaaa -->
         </select>
       </div>
-      <div class="radio">
-        <label for="swallow" class="question-title">What is the airspeed velocity of an unladen European
-          swallow?</label>
-        <label>
-          <input type="radio" name="flavor" value="chocolate" checked>
-          24 miles per hour
-        </label>
-      </div>
-      <div class="radio">
-        <label>
-          <input type="radio" name="flavor" value="vanilla">
-          11 meters per second
-        </label>
-
+      <div class="form-group">
+        <label for="swallow" class="question">What is the airspeed velocity of an unladen swallow?</label>
+        <select class="form-control" id="assyria">
+          <option value="0"> </option>
+          <option value="1">24 miles per hour</option>
+          <option value="2">11 meters per second</option>
+        </select>
       </div>
       <div class="form-group">
-        <label for="knights" class="question-title">What word can the knights who say ekki-ekki-ekki-ekki-ptang not
-          hear? (select one)</label>
+        <label for="knights" class="question">What word can the knights who say ekki-ekki-ekki-ekki-ptang not hear?</label>
         <select class="form-control" id="knights">
-          <option value="1">it</option>
-          <option value="2">is</option>
+          <option value="0"> </option>
+          <option value="1">is</option>
+          <option value="2">it</option>
           <option value="3">shrubbery</option>
         </select>
       </div>
-      <div class="result" id="hidden">Congrats! You made it across the****! You should learn ****</div>
+      <button type="submit" class="btn-primary">Fine. Off you go.</button>
     </form>
+      <div class="result" id="hidden">Congrats! You made it across the****! You should learn ****</div>
+
   </div>
 
 
