@@ -1,5 +1,17 @@
 body {
+  background-image: url('https://media-exp1.licdn.com/dms/image/C4E12AQFQUPKkoU3-8Q/article-cover_image-shrink_600_2000/0/1520162820929?e=1628121600&v=beta&t=CRRYgiTIIoVRyHXG0BNiPNPpSnYJAa0Idiv734M5oNU');
+  background-size: repeat;
   padding-bottom: 100px;
+}
+
+.container {
+  background-color: aquamarine;
+  padding-bottom: 300px;
+}
+
+.jumbotron {
+  width: 75%;
+  text-align: center;
 }
 
 #hidden {
@@ -8,4 +20,8 @@ body {
 
 #hidden-fail {
   display: none;
+}
+
+.aside {
+  font-size: xx-small;
 }
