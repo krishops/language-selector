@@ -36,12 +36,12 @@ $(document).ready(function()  {
       if (total <=25) {
         $("#language").text("Ruby");
         $("#hidden").show();
-      // } else if (total >25 && <=50) {
-      //   $("language").text("Java");
-      //   $("#hidden").show();
-      // } else if (total >50 && <=75) {
-      //   $("language").text("C#");
-      //   $("#hidden").show();
+      } else if (total >25 && <=50) {
+        $("language").text("Java");
+        $("#hidden").show();
+      } else if (total >50 && <=75) {
+        $("language").text("C#");
+        $("#hidden").show();
       }
     
     
