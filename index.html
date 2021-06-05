@@ -13,19 +13,21 @@
   <div class="container">
     <div class="jumbotron" id="heading">
       <h1>Welcome to the Bridge of Death</h1>
-      <h4>STOP! Who would cross the Bridge of Death <span class="aside">(and find which programming language they should learn first)</span> <p>must answer me these questions three <span class="aside">(6, sir)</span></p></h4>
+      <h4>STOP!</h4>
+      <h4>Who would cross the Bridge of Death <span class="aside">(and find which programming language they should learn first)</span></h4>
+      <h4>must answer me these questions three <span class="aside">(6, sir)</span></h4>
     </div>
 
     <form id="language-selector">
       <div class="form-group">
-        <label class="question" for="name">What is your name?</label>
+        <label for="name" class="question">What is your name?</label>
         <input type="text" id="name" class="form-control">
       </div>
       <label for="quest" class="question">What is your quest?</label>
       <div class="radio">
         <label>
           <input type="radio" name="quest" value="web-design" checked>
-          Web design
+          Web Design
         </label>
       </div>
       <div class="radio">
@@ -59,7 +61,7 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="assyria" class="question">What is the capitol of assyria?</label>
+        <label for="assyria" class="question">What is the capital of Assyria?</label>
         <select class="form-control" id="assyria">
           <option value="0"> </option>
           <option value="5">Ashur</option>
@@ -70,7 +72,7 @@
         </select>
       </div>
       <div class="form-group">
-        <label for="swallow" class="question">What is the airspeed velocity of an unladen swallow?</label>
+        <label for="swallow" class="question">What is the airspeed velocity of an unladen European swallow?</label>
         <select class="form-control" id="swallow">
           <option value="0"> </option>
           <option value="5">24 miles per hour</option>
@@ -87,22 +89,27 @@
         </select>
       </div>
       <button type="submit" class="btn-light">Submit</button>
-      <button type="reset" class="btn-danger">Reset Form</button><p></p>
+      <button type="reset" class="btn-danger">Reset Form</button>
+      <p></p>
 
-    <div class="row">
-      <div class="col-md-2">
-        <div class="result" id="hidden"><p>Congratulations Sir <span id=username></span>! You made it across the Bridge of Death! <p>You should study <span id=language></span><img src="https://miro.medium.com/max/700/1*kyEjSLsLDPXjRQavWqNQFQ.jpeg" alt="Sir Lancelot"></p>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="result" id="hidden">
+            <p>Congratulations Sir <span id=username></span>! You made it across the Bridge of Death</p>
+            <p>You should study <span id=language></span><img src="https://miro.medium.com/max/700/1*kyEjSLsLDPXjRQavWqNQFQ.jpeg" alt="Sir Lancelot"></p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="row">
-      <div class="col-md-2">      
-        <div class="result" id="hidden-fail">
-          <p>Unfortunately Sir <span id=username-fail></span>, seeking the Holy Grail is not a valid quest!</p>
-          <p>You have been yeeted into the abyss.<img src="http://www.thepinksmoke.com/images/deathholygrail.png" alt="Sir Robin"></p>
+      <div class="row">
+        <div class="col-md-2">
+          <div class="result" id="hidden-fail">
+            <p>Unfortunately Sir <span id=username-fail></span>, seeking the Holy Grail is not a valid quest!</p>
+            <p>You have been yeeted into the abyss.<img src="http://www.thepinksmoke.com/images/deathholygrail.png" alt="Sir Robin"></p>
+          </div>
         </div>
       </div>
-    </div>
-</form>
+    </form>
+  </div>
 </body>
+
 </html>
