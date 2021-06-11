@@ -14,11 +14,13 @@ $(document).ready(function () {
     const total = userTotal(color, assyria, swallow, knights);
     $("#username").text(name);
     $("#username-fail").text(name);
+    $(".btn-light").hide();
 
     $(".btn-danger").click(function () {
       $("#language-selector").trigger("reset");
       $("#hidden").hide();
       $("#hidden-fail").hide()
+      $(".btn-light").show();
     });
 
     if ((quest === "web-design")) {
@@ -28,43 +30,34 @@ $(document).ready(function () {
       } else if (total > 26 && total <= 50) {
         $("#language").text("Java");
         $("#hidden").show();
-      } else if (total > 51 && total <= 75) {
+      } else (total > 51 && total <= 75)
         $("#language").text("C#");
         $("#hidden").show();
-      }
-    }
+      
+    } else if ((quest === "desktop")) {
+        if (total <= 25) {
+          $("#language").text("C#");
+          $("#hidden").show();
+        } else if (total > 26 && total <= 50) {
+          $("#language").text("Ruby");
+          $("#hidden").show();
+        } else (total > 51 && total <= 75);
+          $("#language").text("Java");
+          $("#hidden").show();
+        
+    } else if ((quest === "mobile")) {
+        if (total <= 25) {
+          $("#language").text("Java");
+          $("#hidden").show();
+        } else if (total > 26 && total <= 50) {
+          $("#language").text("C#");
+          $("#hidden").show();
+        } else (total > 51 && total <= 75);
+          $("#language").text("Ruby");
+          $("#hidden").show();
 
-    if ((quest === "desktop")) {
-      if (total <= 25) {
-        $("#language").text("C#");
-        $("#hidden").show();
-      } else if (total > 26 && total <= 50) {
-        $("#language").text("Ruby");
-        $("#hidden").show();
-      } else if (total > 51 && total <= 75) {
-        $("#language").text("Java");
-        $("#hidden").show();
-      }
-    }
-
-    if ((quest === "mobile")) {
-      if (total <= 25) {
-        $("#language").text("Java");
-        $("#hidden").show();
-      } else if (total > 26 && total <= 50) {
-        $("#language").text("C#");
-        $("#hidden").show();
-      } else if (total > 51 && total <= 75) {
-        $("#language").text("Ruby");
-        $("#hidden").show();
-      }
-    }
-
-    if ((quest === "holy-grail")) {
-      if (total >= 0 && total <= 75) {
-        $("#hidden-fail").show();
-      }
-    }
+    } else
+      $("#hidden-fail").show();
   });
 });
 

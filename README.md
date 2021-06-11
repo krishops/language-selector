@@ -23,7 +23,7 @@ This form uses JavaScript and jQuery to help a user determine which programming 
 
 ## Known Bugs
 
-* If the Reset Form button is not pressed, the form can output a new result, without clearing the old result.
+* There are no known bugs in this project.
 
 ## License
 
